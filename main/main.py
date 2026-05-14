@@ -18,9 +18,4 @@ if __name__ == "__main__":
         data = pickle.load(f)
         print(type(data))
 
-        for i in range(len(data)):
-            print(str(i + 1) + ":")
-            print(data[i] + "\n")
-            print("==========================\n")
     
-    #print(f"Extraction complete: {target}")

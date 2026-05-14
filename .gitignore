@@ -15,6 +15,7 @@ venv/
 # Project outputs
 Documents/ExtractedText/
 Documents/ParsedText/
+Documents/pdfs/
 
 # Logs
 *.log
