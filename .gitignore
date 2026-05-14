@@ -13,9 +13,7 @@ venv/
 .idea/
 
 # Project outputs
-Documents/ExtractedText/
-Documents/ParsedText/
-Documents/pdfs/
+Documents/
 
 # Logs
 *.log

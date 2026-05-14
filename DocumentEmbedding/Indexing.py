@@ -1,4 +1,4 @@
-from faiss import faiss
+import faiss
 import numpy as np
 
 class Indexing:
@@ -33,9 +33,11 @@ class Indexing:
         except Exception as e:
             print(f"Error saving index to {file_path}: {e}")
             raise e
-    def load_index(self, file_path: str):
+    def load_index(self, file_path: str) :
         try:
-            self.index = faiss.read_index(file_path)
+            embeddings = faiss.read_index(file_path)
+            return embeddings
         except Exception as e:
             print(f"Error loading index from {file_path}: {e}")
             raise e
+    
