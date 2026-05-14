@@ -73,10 +73,6 @@ if __name__ == "__main__":
                 index = Indexing(embedding_dim=len(embeddings[0]))
                 index.add_embeddings(embeddings)
                 index.save_index(str(Path(embeddings_path) / (pkl_file.stem + ".faiss")))
-    index = Indexing(embedding_dim=384)
-    loaded_embeddings = index.load_index(str(Path(embeddings_path) / "AYBÜ ÖĞMER TANITIM.faiss"))
-    for i in range(loaded_embeddings.ntotal):
-        print(f"Embedding {i}: {loaded_embeddings.reconstruct(i)}")
-        print("="*30)
+    
 
     
